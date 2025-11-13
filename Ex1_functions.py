@@ -96,13 +96,13 @@ print("-------------------------------------------\n"
 #
 # Note: Only the DRIVER should be typing!
 # Write your code below:
-def display_loan(Title:string, author, Borrower):
+def display_loan(Title, author, Borrower):
     print(f"Title: {Title}")
     print(f"Author:{author}")
     print(f"Borrower:{Borrower}")
 display_loan("1984", "George Orwell", "Sarah Smith")
 #display_loan(1984, "George Orwell", "Sarah Smith")
- -------------------------------------------
+# -------------------------------------------
 # SWAP COMPUTERS
 # -------------------------------------------
 # Use Git to:
@@ -145,7 +145,22 @@ print("-------------------------------------------\n"
 # Note: Only the DRIVER should be typing!
 # Write your code below:
 
-
+def get_book_title():
+    book_title = input("Enter book title: ") 
+    return book_title  
+def get_book_author():
+    user = input("Enter book author: ")
+    return user
+def get_borrower_name():
+    borrower_name = input("Enter borrower's name:")
+    return borrower_name
+def create_loan_record(title, author, borrower):
+    return {"title": title, "author": author, "borrower": borrower}
+title = get_book_title()
+author = get_book_author()
+borrower = get_borrower_name()
+loan = create_loan_record(title,author,borrower)
+print(loan)
 
 
 # -------------------------------------------
