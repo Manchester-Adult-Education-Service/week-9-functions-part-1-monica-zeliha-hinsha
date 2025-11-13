@@ -50,6 +50,16 @@ print("-------------------------------------------\n"
 #
 # Note: Only the DRIVER should be typing!
 # Write your code below:
+def display_header():
+    print("=== LIBRARY BOOK LOAN SYSTEM ===")
+
+def display_menu():
+    print( "1. Record new loan")
+    print("2. View all loans")
+    print("3. Exit")
+display_header()
+display_menu()
+    
 
 
 
